@@ -1,0 +1,50 @@
+nav{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    transition: var(--transition);
+}
+.nav__scroll{
+    background-color: var(--color-light);
+    backdrop-filter: blur(15px);
+    color: var(--color-primary) !important;
+}
+.nav__scroll ul li a{
+    color: var(--color-primary);
+}
+nav img{
+    height: 70%;
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
+nav ul li a{
+    color: var(--color-white);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
+
+@media screen and (max-width:1024px){
+    
+    header nav ul{
+        gap: 1rem;
+    }
+}
+
+/* ==================MEDIA QURIES (SMALL DEVICES)=============== */
+
+@media screen and (max-width:600px) {
+    header nav{
+        display: none;
+    }
+}

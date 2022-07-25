@@ -1,0 +1,92 @@
+.team__portion{
+    padding: 15rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg_2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    color: var(--color-white) !important;
+
+}
+
+.team__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.team__member__container{
+    background: rgba(255,255,255,0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    color: var(--color-light);
+}
+.team__container img{
+    width: 16rem;
+    border-radius: 50%;
+    filter: grayscale(70%);
+    -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+    -moz-box-shadow: 3px 3px 10px 3px #ddd;
+    box-shadow: 3px 3px 10px 3px #ddd;
+}
+.team__member__container h2{
+    font-weight: 400;
+    font-size: 1.7rem !important;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+}
+.team__member__container p{
+    color: var(--color-primary);
+    font-weight: 300;
+    font-size: 1rem;
+}
+.team__member__container small{
+    color: var(--color-primary);
+    font-size: 0.9rem !important;
+}
+.team__btn__container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.message__btn{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 300;
+    transition: var(--transition);
+}
+.message__btn:hover{
+    background-color: var(--color-primary-variant);
+}
+.more__btn{
+    border: 1px solid var(--color-primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 300;
+    transition: var(--transition);
+}
+.more__btn:hover{
+    background-color: var(--color-primary-variant);
+    color: var(--color-white);
+    border-color: var(--color-primary-variant);
+}
+
+/* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
+
+@media screen and (max-width:1024px){
+    
+}
+
+/* ==================MEDIA QURIES (SMALL DEVICES)=============== */
+
+@media screen and (max-width:600px) {
+    .team__portion{
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+    }
+}

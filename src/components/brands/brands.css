@@ -1,0 +1,13 @@
+.brands__portion{
+    padding: 10rem 1rem;
+}
+.brands__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.brands__container img{
+    width: 12rem;
+}

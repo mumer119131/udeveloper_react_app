@@ -1,0 +1,31 @@
+.header__content__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /* background : linear-gradient(rgba(0,0,0,0,5),rgba(0,0,0,0,5)),url('../assets/sean-pollock-PhYq704ffdA-unsplash.jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../assets/bg_1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    height: 115vh;
+}
+.header__content__container img{
+    width: 15rem;
+}
+.header__content__container h2{
+    font-size: 2rem;
+}
+.header__content__container p{
+    text-align: center;
+    margin: 1rem 3rem;
+}
+.header__content__container .btn__container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.header__content__container .btn__container i{
+    margin-left: 0.4rem;
+}

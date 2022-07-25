@@ -1,0 +1,51 @@
+.gallery__portion{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg_3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    color: var(--color-white) !important;
+    position: relative;
+}
+.navi__btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.right__btn{
+    right: 2rem;
+}
+.navi__btn:hover{
+    color: #03312E;
+    background-color: var(--color-light);
+}
+.left__btn{
+    left: 2rem;
+}
+
+/* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
+
+@media screen and (max-width:1024px){
+    
+}
+
+/* ==================MEDIA QURIES (SMALL DEVICES)=============== */
+
+@media screen and (max-width:600px) {
+
+    .right__btn{
+        right: 1rem;
+    }
+    .left__btn{
+        left: 1rem;
+    }
+    .gallery__portion h2{
+        margin-bottom: 15rem;
+    }
+}
