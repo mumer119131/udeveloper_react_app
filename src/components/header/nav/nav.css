@@ -13,6 +13,10 @@ nav{
     backdrop-filter: blur(15px);
     color: var(--color-primary) !important;
 }
+.nav__scroll .active{
+    background-color: var(--color-primary);
+    color: white;
+}
 .nav__scroll ul li a{
     color: var(--color-primary);
 }
@@ -30,7 +34,15 @@ nav ul li a{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: var(--transition);
 }
+.active{
+    background-color: white;
+    color: var(--color-primary);
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+
 
 /* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
 

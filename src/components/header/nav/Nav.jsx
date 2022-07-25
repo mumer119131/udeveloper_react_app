@@ -5,6 +5,7 @@ import WHITE_LOGO from '../../../assets/ud_logo_white.png'
 import GRADIENT_LOGO from '../../../assets/ud_logo_gradient.png'
 
 const Nav = () => {
+  const [active, setActive] = useState('#')
   const [logo, setLogo] = useState(WHITE_LOGO)
   useEffect(()=>{
     var myNav = document.getElementById('nav_bar');
@@ -26,12 +27,12 @@ const Nav = () => {
     <nav id="nav_bar">
         <img src={logo} alt="" id="logo" />
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#work_portion">Work</a></li>
-            <li><a href="#team_portion">Team</a></li>
-            <li><a href="#review_portion">Reviews</a></li>
-            <li><a href="#gallery_portion">Gallery</a></li>
-            <li><a href="#contact_portion">Contact</a></li>
+            <li><a href="#" onClick={ ()=> setActive("#") } className={active === '#' ? 'active' : '' }>Home</a></li>
+            <li><a href="#work_portion" onClick={ ()=> setActive("work") } className={active === 'work' ? 'active' : '' }>Work</a></li>
+            <li><a href="#team_portion" onClick={ ()=> setActive("team") } className={active === 'team' ? 'active' : '' }>Team</a></li>
+            <li><a href="#review_portion" onClick={ ()=> setActive("reviews") } className={active === 'reviews' ? 'active' : '' }>Reviews</a></li>
+            <li><a href="#gallery_portion" onClick={ ()=> setActive("gallery") } className={active === 'gallery' ? 'active' : '' }>Gallery</a></li>
+            <li><a href="#contact_portion" onClick={ ()=> setActive("contact") } className={active === 'contact' ? 'active' : '' }>Contact</a></li>
         </ul>
             
     </nav>
